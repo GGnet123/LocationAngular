@@ -1,0 +1,55 @@
+:host {
+  .arrow-button {
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
+    border: none;
+    margin: 10px;
+    color: black;
+    font-size: large;
+    font-family: 'SansSerif', monospace;
+    font-weight: bold;
+    &:focus, &:active {
+      color: darkred;
+      outline: 0;
+    }
+  }
+
+  .my-prompt {
+    .box {
+      text-align: center;
+      border: 3px solid red;
+      padding: 10px;
+      position: relative;
+      min-width: 30ch;
+      ul{
+        text-align: left;
+      }
+    }
+    header {
+      position: absolute;
+      display: inline-block;
+      left: 0;
+      right: 0;
+      top: -.65em;
+      .title {
+        background: cornflowerblue;
+        padding: 0 1ch;
+      }
+    }
+    footer {
+      padding-top: 2ch;
+    }
+    button {
+      -webkit-tap-highlight-color: transparent;
+      background: transparent;
+      border: 0;
+      color: #ffffff;
+      font-family: 'Roboto Mono', monospace;
+      margin: 1ch;
+      &:focus {
+        background: #000000;
+        outline: 0;
+      }
+    }
+  }
+}

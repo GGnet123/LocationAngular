@@ -1,0 +1,18 @@
+<button class="arrow-button" [disabled]="popUpOpen" (click)="openPopUp()">&#x25b6; Details</button>
+<pop-up class="my-prompt" [isOpen]="popUpOpen">
+    <div class="box">
+        <header>
+            <span class="title">Details</span>
+        </header>
+        <main>
+            <ul>
+                <li>Number of tracked users: {{numOfUsers}}</li>
+                <li>Some info: hello world</li>
+                <li>Some info: this is my app!</li>
+            </ul>
+        </main>
+        <footer>
+            <button (click)="close()">&lt;&nbsp;close&nbsp;&gt;</button>
+        </footer>
+    </div>
+</pop-up>
